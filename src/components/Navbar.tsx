@@ -23,23 +23,12 @@ interface RouteProps {
   label: string;
 }
 
+
 const routeList: RouteProps[] = [
-  {
-    href: "#features",
-    label: "Features",
-  },
-  {
-    href: "#testimonials",
-    label: "Testimonials",
-  },
-  {
-    href: "#pricing",
-    label: "Pricing",
-  },
-  {
-    href: "#faq",
-    label: "FAQ",
-  },
+  { href: "#boshsahifa", label: "Bosh sahifa" },
+  { href: "#xizmatlar", label: "Xizmatlar" },
+  { href: "#narxlar", label: "Narxlar" },
+  { href: "#aloqa", label: "Aloqa" },
 ];
 
 export const Navbar = () => {

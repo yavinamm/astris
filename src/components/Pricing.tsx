@@ -18,7 +18,7 @@ enum PopularPlanType {
 interface PricingProps {
   title: string;
   popular: PopularPlanType;
-  price: number;
+  price: string;
   description: string;
   buttonText: string;
   benefitList: string[];
@@ -26,48 +26,46 @@ interface PricingProps {
 
 const pricingList: PricingProps[] = [
   {
-    title: "Free",
+    title: "Target Reklama",
     popular: 0,
-    price: 0,
+    price: "150",
     description:
-      "Lorem ipsum dolor sit, amet ipsum consectetur adipisicing elit.",
-    buttonText: "Get Started",
+      "Ijtimoiy tarmoqlarda brendingizni aniq auditoriyaga yo'naltirib, samarali reklama qilish. 2 yillik tajribaga ega targetologlar bilan.",
+    buttonText: "Tanlash",
     benefitList: [
-      "1 Team member",
-      "2 GB Storage",
-      "Upto 4 pages",
-      "Community support",
-      "lorem ipsum dolor",
+      "2 yillik tajribaga ega targetolog",
+      "Aniq auditoriya tahlili",
+      "Samarali reklama kampaniyalari",
+      "Oylik hisobot",
     ],
   },
   {
-    title: "Premium",
+    title: "SMM Boshqaruv",
     popular: 1,
-    price: 5,
+    price: "800-1200",
     description:
-      "Lorem ipsum dolor sit, amet ipsum consectetur adipisicing elit.",
-    buttonText: "Start Free Trial",
+      "Ijtimoiy tarmoqlarda brandni strategik rivojlantirish. Full komanda bilan professional yondoshish va keng qamrovli strategiya.",
+    buttonText: "Tanlash",
     benefitList: [
-      "4 Team member",
-      "4 GB Storage",
-      "Upto 6 pages",
-      "Priority support",
-      "lorem ipsum dolor",
+      "To'liq mas'uliyat va komanda",
+      "Strategik rejalashtirish",
+      "Kontent yaratish",
+      "Kommunity management",
+      "Tahlil va hisobotlar",
     ],
   },
   {
-    title: "Enterprise",
+    title: "Shaxsiy Brand",
     popular: 0,
-    price: 40,
+    price: "500-1000",
     description:
-      "Lorem ipsum dolor sit, amet ipsum consectetur adipisicing elit.",
-    buttonText: "Contact US",
+      "Ijtimoiy tarmoqlarda imijingizni yaratish va strategik rivojlantirish. Full komanda bilan professional yondoshish.",
+    buttonText: "Tanlash",
     benefitList: [
-      "10 Team member",
-      "8 GB Storage",
-      "Upto 10 pages",
-      "Priority support",
-      "lorem ipsum dolor",
+      "Shaxsiy imij yaratish",
+      "Professional fotosurat",
+      "Kontent strategiya",
+      "SMM boshqaruv",
     ],
   },
 ];
@@ -75,20 +73,18 @@ const pricingList: PricingProps[] = [
 export const Pricing = () => {
   return (
     <section
-      id="pricing"
+      id="#narxlar"
       className="container py-24 sm:py-32"
     >
       <h2 className="text-3xl md:text-4xl font-bold text-center">
-        Get
+        <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">Xizmatlar</span>
         <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
           {" "}
-          Unlimited{" "}
+          Narxlari{" "}
         </span>
-        Access
       </h2>
       <h3 className="text-xl text-center text-muted-foreground pt-4 pb-8">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
-        reiciendis.
+      Har bir biznes uchun mos narxlar va paketlar. Barchasi siz uchun !
       </h3>
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         {pricingList.map((pricing: PricingProps) => (
@@ -108,13 +104,13 @@ export const Pricing = () => {
                     variant="secondary"
                     className="text-sm text-primary"
                   >
-                    Most popular
+                    Eng Mashhur
                   </Badge>
                 ) : null}
               </CardTitle>
               <div>
                 <span className="text-3xl font-bold">${pricing.price}</span>
-                <span className="text-muted-foreground"> /month</span>
+                <span className="text-muted-foreground"> /Oyiga</span>
               </div>
 
               <CardDescription>{pricing.description}</CardDescription>
@@ -133,7 +129,7 @@ export const Pricing = () => {
                     key={benefit}
                     className="flex"
                   >
-                    <Check className="text-green-500" />{" "}
+                    <Check className="text-[#981a41]" />{" "}
                     <h3 className="ml-2">{benefit}</h3>
                   </span>
                 ))}

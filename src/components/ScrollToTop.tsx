@@ -21,7 +21,6 @@ export const ScrollToTop = () => {
       left: 0,
     });
   };
-
   return (
     <>
       {showTopBtn && (

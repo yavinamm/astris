@@ -1,6 +1,5 @@
 import { Card, CardDescription, CardHeader, CardTitle } from "./ui/card";
 import { MagnifierIcon, WalletIcon, ChartIcon } from "./Icons";
-import cubeLeg from "../assets/cube-leg.png";
 
 interface ServiceProps {
   title: string;
@@ -10,66 +9,71 @@ interface ServiceProps {
 
 const serviceList: ServiceProps[] = [
   {
-    title: "Code Collaboration",
+    title: "SMM Boshqaruv",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
+      "Ijtimoiy tarmoqlarda brandni strategik rivojlantirish. Full komanda bilan professional yondoshish va keng qamrovli strategiya.",
     icon: <ChartIcon />,
   },
   {
-    title: "Project Management",
+    title: "Target Reklama",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
+      "Ijtimoiy tarmoqlarda brendingizni aniq auditoriyaga yo'naltirib, samarali reklama qilish. 2 yillik tajribaga ega targetologlar bilan.",
     icon: <WalletIcon />,
   },
   {
-    title: "Task Automation",
+    title: "Shaxsiy Brend",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
+      "Ijtimoiy tarmoqlarda imijingizni yaratish va strategik rivojlantirish. Full komanda bilan professional yondoshish.",
     icon: <MagnifierIcon />,
+  },
+  {
+    title: "Influencer Marketing",
+    description:
+      "Brandingizni liderlar bilan birga tanitish. Budjetdan kelib chiqqan holda eng samarali influyenserlar bilan hamkorlik.",
+    icon: <ChartIcon />,
+  },
+  {
+    title: "Strategiya + Kontent Plan",
+    description:
+      "Brandingiz poydevorini mustahkamlash uchun oylik SMM strategiya va shu asosida to'liq kontent plan yaratish.",
+    icon: <WalletIcon />,
   },
 ];
 
 export const Services = () => {
   return (
     <section className="container py-24 sm:py-32">
-      <div className="grid lg:grid-cols-[1fr,1fr] gap-8 place-items-center">
-        <div>
-          <h2 className="text-3xl md:text-4xl font-bold">
-            <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
-              Client-Centric{" "}
-            </span>
-            Services
-          </h2>
+      <div className="space-y-8">
+        <h2 className="text-3xl md:text-4xl font-bold text-center">
+          <span className="bg-gradient-to-b from-[#981a41] via-[#b2355f] to-[#d84a7e] text-transparent bg-clip-text">
+            Bizning Xizmatlarimiz{" "}
+          </span>
+        </h2>
 
-          <p className="text-muted-foreground text-xl mt-4 mb-8 ">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis
-            dolor.
-          </p>
+        <p className="text-muted-foreground text-xl text-center max-w-2xl mx-auto">
+          Brendingizni rivojlantirish uchun barcha zarur xizmatlar bir joyda
+        </p>
 
-          <div className="flex flex-col gap-8">
-            {serviceList.map(({ icon, title, description }: ServiceProps) => (
-              <Card key={title}>
-                <CardHeader className="space-y-1 flex md:flex-row justify-start items-start gap-4">
-                  <div className="mt-1 bg-primary/20 p-1 rounded-2xl">
-                    {icon}
-                  </div>
-                  <div>
-                    <CardTitle>{title}</CardTitle>
-                    <CardDescription className="text-md mt-2">
-                      {description}
-                    </CardDescription>
-                  </div>
-                </CardHeader>
-              </Card>
-            ))}
-          </div>
+        <div className="flex flex-col gap-8">
+          {serviceList.map(({ icon, title, description }: ServiceProps) => (
+            <Card
+              key={title}
+              className="w-full transform transition-all duration-300 hover:scale-[1.02] hover:shadow-xl shadow-[#981a41] hover:border-primary/40 border border-transparent"
+            >
+              <CardHeader className="flex flex-row items-start gap-6">
+                <div className="bg-primary/20 p-6 rounded-2xl flex items-center justify-center text-primary text-3xl transition-colors duration-300 group-hover:text-white group-hover:bg-primary">
+                  {icon}
+                </div>
+                <div className="flex-1">
+                  <CardTitle className="text-2xl">{title}</CardTitle>
+                  <CardDescription className="text-md mt-2">
+                    {description}
+                  </CardDescription>
+                </div>
+              </CardHeader>
+            </Card>
+          ))}
         </div>
-
-        <img
-          src={cubeLeg}
-          className="w-[300px] md:w-[500px] lg:w-[600px] object-contain"
-          alt="About services"
-        />
       </div>
     </section>
   );
