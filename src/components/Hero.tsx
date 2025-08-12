@@ -27,12 +27,16 @@ export const Hero = () => {
         </p>
 
         <div className="space-y-4 md:space-y-0 md:space-x-4">
-          <Button className="w-full md:w-1/3">Bepul konsultatsiya</Button>
+          <a
+            href="#aloqa"
+            className="w-full md:w-1/3"
+          >
+            <Button className="w-full">Bepul konsultatsiya</Button>
+          </a>
 
           <a
             rel="noreferrer noopener"
             href="#xizmatlar"
-            target="_blank"
             className={`w-full md:w-1/3 ${buttonVariants({
               variant: "outline",
             })}`}
@@ -40,6 +44,7 @@ export const Hero = () => {
             Xizmatlar bilan tanishish
           </a>
         </div>
+
       </div>
       <div className="shadow"></div>
     </section>
