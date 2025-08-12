@@ -104,7 +104,7 @@ export const PersonalBrand = () => {
             millionlar ko'rishiga olib chiqing
           </p>
           <a
-            href="#contact"
+            href="#aloqa"
             className="inline-block bg-gradient-to-r from-[#981a41] via-[#b2355f] to-[#d84a7e] text-white font-semibold py-3 px-8 rounded-lg shadow-lg hover:brightness-110 transition"
           >
             Bepul konsultatsiya

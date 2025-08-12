@@ -48,7 +48,7 @@ export const TargetAdvertising = () => {
             </div>
           </div>
 
-          {/* Budget grid */}
+         
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
             {[
               { icon: "💵", title: "Kunlik Budjet", value: "$5", desc: "Har bir kampaniya uchun" },
@@ -70,7 +70,7 @@ export const TargetAdvertising = () => {
             ))}
           </div>
 
-          {/* Campaign details */}
+        
           <div className="mb-10">
             <h4 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-4">
               Kampaniya tafsilotlari:
@@ -85,7 +85,6 @@ export const TargetAdvertising = () => {
             </ul>
           </div>
 
-          {/* ROI */}
           <div className="bg-gradient-to-r from-[#981a41] via-[#b2355f] to-[#d84a7e] text-white rounded-lg p-6 shadow-lg">
             <h4 className="text-lg font-semibold mb-2">🎯 ROI Natijasi</h4>
             <p>
@@ -95,7 +94,7 @@ export const TargetAdvertising = () => {
           </div>
         </div>
 
-        {/* CTA */}
+
         <div className="animate-on-scroll mt-20 max-w-xl mx-auto text-center space-y-4">
           <h3 className="text-3xl font-bold text-gray-900 dark:text-gray-100">
             O'z biznesingiz uchun ham shunday samarali target reklama!
@@ -105,7 +104,7 @@ export const TargetAdvertising = () => {
             maksimal natija oling
           </p>
           <a
-            href="#contact"
+            href="#aloqa"
             className="inline-block bg-gradient-to-r from-[#981a41] via-[#b2355f] to-[#d84a7e] text-white font-semibold py-3 px-8 rounded-lg shadow-lg hover:brightness-110 transition"
           >
             Bepul konsultatsiya

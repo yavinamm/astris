@@ -42,7 +42,7 @@ export const Marketing = () => {
                 <span className="flex items-center gap-1">📊 Million ko'rishlar</span>
               </p>
 
-              {/* Campaign details */}
+            
               <div className="mt-4">
                 <h4 className="font-semibold text-gray-900 dark:text-gray-100 mb-2">
                   Kampaniya tafsilotlari:
@@ -59,7 +59,7 @@ export const Marketing = () => {
           </div>
         </div>
 
-        {/* YouTube videos */}
+       
         <div className="youtube-videos-grid animate-on-scroll grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {[
             {
@@ -117,7 +117,7 @@ export const Marketing = () => {
           ))}
         </div>
 
-        {/* CTA */}
+       
         <div className="influencer-cta animate-on-scroll mt-20 text-center max-w-2xl mx-auto space-y-4">
           <h3 className="text-3xl font-bold text-gray-900 dark:text-gray-100">
             O‘z brendingiz uchun ham shunday kampaniyalar!
@@ -126,7 +126,7 @@ export const Marketing = () => {
             Professional influencer marketing xizmatlarimiz bilan brendingizni millionlar ko‘rishiga olib chiqing
           </p>
           <a
-            href="#contact"
+            href="#aloqa"
             className="inline-block bg-gradient-to-r from-[#981a41] via-[#b2355f] to-[#d84a7e] text-white font-semibold py-3 px-8 rounded-lg shadow-lg hover:brightness-110 transition"
           >
             Bepul konsultatsiya
