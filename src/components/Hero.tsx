@@ -26,11 +26,8 @@ export const Hero = () => {
           Astris Media - sizning ishonchli hamkoringiz SMM, Target, Influencer Marketing va Digital Marketing sohasida. 2 yillik tajribaga ega professional jamoa bilan brendingizni muvaffaqiyatga olib boramiz.
         </p>
 
-        <div className="space-y-4 md:space-y-0 md:space-x-4">
-          <a
-            href="#aloqa"
-            className="w-full md:w-1/3"
-          >
+        <div className="flex flex-col md:flex-row gap-4">
+          <a href="#aloqa" className="w-full md:w-1/3">
             <Button className="w-full">Bepul konsultatsiya</Button>
           </a>
 
@@ -44,6 +41,7 @@ export const Hero = () => {
             Xizmatlar bilan tanishish
           </a>
         </div>
+
 
       </div>
       <div className="shadow"></div>

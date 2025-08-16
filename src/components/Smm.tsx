@@ -30,7 +30,7 @@ export const Smm = () => {
             },
           ].map(({ src, href }, idx) => (
             <div key={idx} className="video-card flex flex-col rounded-lg shadow-lg border border-gray-200 dark:border-gray-700 overflow-hidden bg-white dark:bg-gray-800 transition">
-              <div className="video-container aspect-video w-full">
+              <div className="video-container w-full h-[600px]">
                 <iframe
                   src={src}
                   width="100%"
