@@ -17,7 +17,7 @@ export const Cta = () => {
           <form className="space-y-6" id="contactForm">
   
             <div className="flex flex-col text-left">
-              <label htmlFor="name" className="font-semibold mb-2 text-gray-900 dark:text-gray-200">
+              <label htmlFor="name" className="font-semibold mb-2 text-gray-900 dark:text-[#b4345f]">
                 Ismingiz
               </label>
               <input
@@ -26,13 +26,13 @@ export const Cta = () => {
                 type="text"
                 required
                 placeholder="Ismingizni kiriting"
-                className="rounded-md border border-gray-300 dark:border-gray-700 p-3 text-gray-900 dark:text-gray-200 placeholder:text-gray-400 dark:placeholder:text-gray-600 focus:outline-none focus:ring-2 focus:ring-primary transition"
+                className="rounded-md border border-gray-300 dark:border-gray-700 p-3 text-gray-900 dark:text-gray-800 placeholder:text-gray-400 dark:placeholder:text-gray-600 focus:outline-none focus:ring-2 focus:ring-primary transition"
               />
             </div>
 
          
             <div className="flex flex-col text-left">
-              <label htmlFor="phone" className="font-semibold mb-2 text-gray-900 dark:text-gray-200">
+              <label htmlFor="phone" className="font-semibold mb-2 text-gray-900 dark:text-[#b4345f]">
                 Telefon raqam
               </label>
               <input
@@ -41,13 +41,13 @@ export const Cta = () => {
                 type="tel"
                 required
                 placeholder="+998 90 123 45 67"
-                className="rounded-md border border-gray-300 dark:border-gray-700 p-3 text-gray-900 dark:text-gray-200 placeholder:text-gray-400 dark:placeholder:text-gray-600 focus:outline-none focus:ring-2 focus:ring-primary transition"
+                className="rounded-md border border-gray-300 dark:border-gray-700 p-3 text-gray-900 dark:text-gray-800 placeholder:text-gray-400 dark:placeholder:text-gray-600 focus:outline-none focus:ring-2 focus:ring-primary transition"
               />
             </div>
 
 
             <div className="flex flex-col text-left">
-              <label htmlFor="service" className="font-semibold mb-2 text-gray-900 dark:text-gray-200">
+              <label htmlFor="service" className="font-semibold mb-2 text-gray-900 dark:text-[#b4345f]">
                 Xizmat turi
               </label>
               <select
@@ -55,7 +55,7 @@ export const Cta = () => {
                 name="service"
                 required
                 defaultValue=""
-                className="rounded-md border border-gray-300 dark:border-gray-700 p-3 text-gray-900 dark:text-gray-900 focus:outline-none focus:ring-2 focus:ring-primary transition"
+                className="rounded-md border border-gray-300 dark:border-gray-700 p-3 text-gray-900 dark:text-[#b4345f] focus:outline-none focus:ring-2 focus:ring-primary transition"
               >
                 <option disabled value="">
                   Xizmat turini tanlang
@@ -70,7 +70,7 @@ export const Cta = () => {
 
    
             <div className="flex flex-col text-left">
-              <label htmlFor="message" className="font-semibold mb-2 text-gray-900 dark:text-gray-200">
+              <label htmlFor="message" className="font-semibold mb-2 text-gray-900 dark:text-[#b4345f]">
                 Qo'shimcha ma'lumot
               </label>
               <textarea
@@ -78,7 +78,7 @@ export const Cta = () => {
                 name="message"
                 rows={4}
                 placeholder="Biznesingiz haqida qisqacha yozib qoldiring. Qanday natija xohlaysiz? Qaysi ijtimoiy tarmoqlar?"
-                className="resize-none rounded-md border border-gray-300 dark:border-gray-700 p-3 text-gray-900 dark:text-gray-200 placeholder:text-gray-400 dark:placeholder:text-gray-600 focus:outline-none focus:ring-2 focus:ring-primary transition"
+                className="resize-none rounded-md border border-gray-300 dark:border-gray-700 p-3 text-gray-900 dark:text-gray-800 placeholder:text-gray-400 dark:placeholder:text-gray-600 focus:outline-none focus:ring-2 focus:ring-primary transition"
               ></textarea>
             </div>
 
