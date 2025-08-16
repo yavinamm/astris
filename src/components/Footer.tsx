@@ -21,10 +21,10 @@ export const Footer = () => {
     <a href="tel:+998500786258" className="hover:opacity-80 transition-opacity" title="Telefon">
       <FaPhone className="w-5 h-5" />
     </a>
-    <a href="https://t.me/astris_media" target="_blank" rel="noreferrer" className="hover:opacity-80 transition-opacity" title="Telegram">
+    <a href="https://t.me/Astrismedia" target="_blank" rel="noreferrer" className="hover:opacity-80 transition-opacity" title="Telegram">
       <FaTelegram className="w-5 h-5" />
     </a>
-    <a href="https://instagram.com/astrismedia" target="_blank" rel="noreferrer" className="hover:opacity-80 transition-opacity" title="Instagram">
+    <a href="https://www.instagram.com/astris_media?igsh=NTJjMHBjbW91cnQ0" target="_blank" rel="noreferrer" className="hover:opacity-80 transition-opacity" title="Instagram">
       <FaInstagram className="w-5 h-5" />
     </a>
     <a href="astrismedia1@gmail.com" target="_blank" rel="noreferrer" className="hover:opacity-80 transition-opacity" title="Instagram">
@@ -60,12 +60,12 @@ export const Footer = () => {
           astrismedia1@gmail.com
         </a>
 
-        <a href="https://instagram.com/astrismedia" target="_blank" rel="noreferrer" className="flex items-center gap-2 hover:text-[#981a41] transition-colors duration-200">
+        <a href="https://www.instagram.com/astris_media?igsh=NTJjMHBjbW91cnQ0" target="_blank" rel="noreferrer" className="flex items-center gap-2 hover:text-[#981a41] transition-colors duration-200">
           <FaInstagram className="w-4 h-4" />
           @astrismedia
         </a>
 
-        <a href="https://t.me/astris_media" target="_blank" rel="noreferrer" className="flex items-center gap-2 hover:text-[#981a41] transition-colors duration-200">
+        <a href="https://t.me/Astrismedia" target="_blank" rel="noreferrer" className="flex items-center gap-2 hover:text-[#981a41] transition-colors duration-200">
           <FaTelegram className="w-4 h-4" />
           @astris_media
         </a>
