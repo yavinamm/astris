@@ -55,7 +55,7 @@ export const Cta = () => {
                 name="service"
                 required
                 defaultValue=""
-                className="rounded-md border border-gray-300 dark:border-gray-700 p-3 text-gray-900 dark:text-[#b4345f] focus:outline-none focus:ring-2 focus:ring-primary transition"
+                className="rounded-md border border-gray-300 dark:border-gray-700 p-3 text-gray-900 dark:text-gray-800 focus:outline-none focus:ring-2 focus:ring-primary transition"
               >
                 <option disabled value="">
                   Xizmat turini tanlang
