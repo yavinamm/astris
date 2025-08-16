@@ -62,12 +62,12 @@ export const Footer = () => {
 
         <a href="https://www.instagram.com/astris_media?igsh=NTJjMHBjbW91cnQ0" target="_blank" rel="noreferrer" className="flex items-center gap-2 hover:text-[#981a41] transition-colors duration-200">
           <FaInstagram className="w-4 h-4" />
-          @astrismedia
+          @astris_media
         </a>
 
         <a href="https://t.me/Astrismedia" target="_blank" rel="noreferrer" className="flex items-center gap-2 hover:text-[#981a41] transition-colors duration-200">
           <FaTelegram className="w-4 h-4" />
-          @astris_media
+          @Astrismedia
         </a>
       </div>
 
